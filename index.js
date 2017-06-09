@@ -6,6 +6,8 @@ function zoomLevel(state = initState, action) {
   switch (action.type) {
   case 'INCREMENT':
     return state + 1
+  case 'INCREASE_BY':
+    return state + action.payload
   case 'DECREMENT':
     return state - 1
   case 'SET':
@@ -41,3 +43,5 @@ store.dispatch({ type: 'SET', payload: 3 })
 // 3
 store.dispatch({ type: 'RESET' })
 // 7
+store.dispatch({ type: 'INCREASE_BY', payload: 3 })
+// 10
