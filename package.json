@@ -6,6 +6,7 @@
   "scripts": {
     "start": "babel-node --presets es2015 index.js",
     "alt": "babel-node --presets es2015 altReducer.js",
+    "alt_": "babel-node --presets es2015 reducerLodash.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
