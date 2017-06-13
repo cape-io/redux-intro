@@ -1,6 +1,6 @@
 import { createStore } from 'redux'
 import thunk from 'redux-thunk'
-import { get, gt, negate, overSome } from 'lodash/fp'
+import { get, negate, overSome } from 'lodash/fp'
 
 import active from './active/reducer'
 
@@ -26,4 +26,5 @@ const reducers = combineReducers({
   active,
   screenSize,
 })
-const store = createStore(reducers, applyMiddleware(thunk))
+
+export default createStore(reducers, applyMiddleware(thunk))
