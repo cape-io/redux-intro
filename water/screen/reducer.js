@@ -1,7 +1,7 @@
 import { IS_MOBILE, NOT_MOBILE } from './actions'
 
 const initState = {
-  isMobile: (windowWidth <= 960)
+  isMobile: null
 }
 
 // Keep track of screen size.
