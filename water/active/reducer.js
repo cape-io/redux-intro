@@ -1,6 +1,8 @@
-import { createStore } from 'redux'
+import { TOGGLE } from './actions'
 
-const initState = (windowWidth <= 960)
+const initState = {
+  isActive: true,
+}
 
 // Keep track of screen size.
 function isMobileReducer(state = initState, action) {
