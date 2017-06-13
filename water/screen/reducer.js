@@ -1,4 +1,3 @@
-import { createStore } from 'redux'
 import { IS_MOBILE, NOT_MOBILE } from './actions'
 
 const initState = {
