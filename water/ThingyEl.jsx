@@ -11,8 +11,6 @@ function Thingy({ toggleActive, isActive }) {
 }
 
 Thingy.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
-  onClick: PropTypes.func.isRequired,
-  icon: PropTypes.string,
+  isActive: PropTypes.bool.isRequired,
+  toggleActive: PropTypes.func.isRequired,
 }
